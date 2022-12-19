@@ -16,11 +16,9 @@ struct Player
     short playerMoney = 0;
 } player;
 
-int main()
+void quest()
 {
     int choice1, choice2, choice3, choice4;
-    SetConsoleCP(1251);
-    SetConsoleOutputCP(1251);
     printf("\t\tMount & Blade: Console Edition\n\n");
     printf("* Вы попали в Кальрадию - средневековую страну-континент.\nЗдесь вам придется отстаивать свои политические и территориальные интересы за ее земли\n");
     printf("* Выберите персонажа:\n1. Бывший вор\n2. Охотник\n3. Дворянин\n4. Ремесленник\n");
@@ -152,6 +150,19 @@ int main()
         }
         break;
     }
+}
+
+void setCP()
+{
+    SetConsoleCP(1251);
+    SetConsoleOutputCP(1251);
+}
+
+int main()
+{
+    //int choice1, choice2, choice3, choice4;
+    setCP();
+    quest();
 
     return 0;
 }
