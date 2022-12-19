@@ -160,9 +160,7 @@ void setCP()
 
 int main()
 {
-    //int choice1, choice2, choice3, choice4;
     setCP();
     quest();
-
     return 0;
 }
